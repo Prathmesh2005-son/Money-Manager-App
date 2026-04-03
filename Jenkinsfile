@@ -10,13 +10,7 @@ pipeline {
 
         stage('Build APK') {
             steps {
-                echo 'Building APK...'
-            }
-        }
-
-        stage('Archive APK') {
-            steps {
-                echo 'Archiving APK...'
+                bat 'gradlew.bat assembleDebug'
             }
         }
     }
