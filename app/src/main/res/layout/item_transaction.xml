@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="6dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txnItem"
+        android:textSize="15sp"
+        android:textColor="@color/primary_text"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txnDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2026-03-02"
+        android:textSize="12sp"
+        android:textColor="#888888"
+        android:layout_marginTop="4dp"/>
+    <TextView
+        android:id="@+id/txnType"
+        android:textSize="13sp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/secondary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txnAmount"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
