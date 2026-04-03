@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/Prathmesh2005-son/Money-Manager-App.git'
+                git branch: 'main', url: 'https://github.com/Prathmesh2005-son/Money-Manager-App.git'
             }
         }
 
