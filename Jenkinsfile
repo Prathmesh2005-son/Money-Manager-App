@@ -6,12 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Clone') {
-            steps {
-              git branch: 'main', url: 'https://github.com/Prathmesh2005-son/Money-Manager-App.git'
-            }
-        }
-
         stage('Build APK') {
             steps {
                 bat 'gradlew.bat assembleDebug --stacktrace'
